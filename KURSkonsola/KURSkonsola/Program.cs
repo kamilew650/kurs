@@ -6,20 +6,64 @@ using System.Threading.Tasks;
 
 namespace KURSkonsola
 {
-    public class Person
+    public abstract class Person
     {
 
-        public int Age { get; set; }
+        public abstract int Age { get; set;}
+        protected int Costam;
+
+        public Person(int age, int costam)
+        {
+            this.Age = age;
+            this.Costam = costam;
+        }
+
+        public abstract void cos();
 
     }
+
+
+    public class Student : Person
+    {
+
+        public bool jedzenie;
+
+        public override int Age
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public Student(int age, int costam) : base(age,costam)
+        {
+            this.Age = age;
+            this.Costam = costam;
+            this.jedzenie = true;
+        }
+
+        public override void cos()
+        {
+            Console.Write("no druga");
+        }
+    }
+
 
     class Program
     {
         static void Main(string[] args)
         {
-            var ktos = new Person();
+            Person ktos = new Student(1,3);
 
-            ktos.Age.set();
+            ktos.cos();
+            Console.Write(ktos.g)
+            
             //int pierwszaZmienna, druga;
             //pierwszaZmienna = 3;
             //druga = 7;

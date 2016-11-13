@@ -59,11 +59,16 @@ namespace KURSkonsola
     {
         static void Main(string[] args)
         {
-            Person ktos = new Student(1,3);
+            KursACs no = new KursACs();
 
-            ktos.cos();
-            Console.Write(ktos.g)
-            
+            no.wczytaj();
+            no.wypisz();
+
+            //Person ktos = new Student(1, 3);
+
+            //ktos.cos();
+            //Console.Write(ktos.g);
+
             //int pierwszaZmienna, druga;
             //pierwszaZmienna = 3;
             //druga = 7;

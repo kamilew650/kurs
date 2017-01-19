@@ -38,13 +38,13 @@ namespace KURSkonsola
     }
 
 
-    class Program2
-    {
-        static void Main(string[] args)
-        {
-            var customer = new Customer(1,"john");
-            Console.WriteLine(customer.Id);
-            Console.WriteLine(customer.Name);
-        }
-    }
+    //class Program2
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        var customer = new Customer(1,"john");
+    //        Console.WriteLine(customer.Id);
+    //        Console.WriteLine(customer.Name);
+    //    }
+    //}
 }

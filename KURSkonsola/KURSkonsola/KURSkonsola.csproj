@@ -49,6 +49,7 @@
     <Compile Include="Program1.cs" />
     <Compile Include="Program2.cs" />
     <Compile Include="Program3_Metody.cs" />
+    <Compile Include="Program4_Fields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

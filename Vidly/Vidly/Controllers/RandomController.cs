@@ -10,12 +10,22 @@ namespace Vidly.Controllers
     public class RandomController : Controller
     {
         // GET: Random
-        public ActionResult View()
+        //public ActionResult View()
+        //{
+        //    var liczba = new Vidly.Models.Random();
+        //    var r = new System.Random();
+        //    liczba.Liczba = r.Next(1,39);
+        //    return View(liczba);
+        //}
+        
+        public ActionResult View(int Od, int Do)
         {
             var liczba = new Vidly.Models.Random();
             var r = new System.Random();
-            liczba.Liczba = r.Next(1,39);
+            Od = Request.Form["Od"];
+            liczba.Liczba = r.Next(Od, Do);
             return View(liczba);
         }
+
     }
 }

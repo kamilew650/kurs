@@ -43,14 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kolekcje.cs" />
-    <Compile Include="IPerson.cs" />
-    <Compile Include="KursACs.cs" />
-    <Compile Include="Program1.cs" />
-    <Compile Include="Program2.cs" />
-    <Compile Include="Program3_Metody.cs" />
-    <Compile Include="Program4_Fields.cs" />
+    <Compile Include="Kurs\Kolekcje.cs" />
+    <Compile Include="Kurs\IPerson.cs" />
+    <Compile Include="Kurs\KursACs.cs" />
+    <Compile Include="Kurs\Program1.cs" />
+    <Compile Include="Kurs\Program2.cs" />
+    <Compile Include="Kurs\Program3_Metody.cs" />
+    <Compile Include="Kurs\Program4_Fields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zabawa\Files.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

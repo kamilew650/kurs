@@ -5,4 +5,12 @@
 }
 
 <h2>@Model.Liczba</h2>
+<br />
 
+@using (Html.BeginRouteForm("View", "Random"))
+{
+ @Html.TextBox("Od");
+ @Html.TextBox("Do");
+
+    <input type="submit" value="Wylosuj">
+}

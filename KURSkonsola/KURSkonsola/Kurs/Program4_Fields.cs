@@ -36,15 +36,15 @@ namespace KURSkonsola
 
     class Program4_Fields
     {
-        public static void Main(string[] args)
-        {
-            Customers c = new Customers(1);
-            c.Orders.Add(new KURSkonsola.Orders());
-            c.Orders.Add(new KURSkonsola.Orders());
+        //public static void Main(string[] args)
+        //{
+        //    Customers c = new Customers(1);
+        //    c.Orders.Add(new KURSkonsola.Orders());
+        //    c.Orders.Add(new KURSkonsola.Orders());
 
-            c.Promote();
+        //    c.Promote();
 
-            Console.WriteLine(c.Orders.Count);
-        }
+        //    Console.WriteLine(c.Orders.Count);
+        //}
     }
 }

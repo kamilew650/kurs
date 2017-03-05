@@ -22,7 +22,7 @@ namespace Vidly.Controllers
         {
             var liczba = new Vidly.Models.Random();
             var r = new System.Random();
-            Od = Request.Form["Od"];
+            Od = int.Parse(Request.Form["Od"]);
             liczba.Liczba = r.Next(Od, Do);
             return View(liczba);
         }

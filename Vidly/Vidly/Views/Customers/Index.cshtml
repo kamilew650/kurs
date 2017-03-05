@@ -1,0 +1,30 @@
+﻿@using Vidly.ViewModels;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (@Model.Ile > 0)
+{
+    <h2>Customers:</h2>
+
+    <table style="width:100%">
+        <tr>
+            <th>Customer</th>
+        </tr>
+        
+        @foreach (var Cust in Model.Customers)
+        {
+            string s = Cust.Name; 
+            <tr>
+                <td> @Html.ActionLink(s, "Details", "Customers")  </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h4>Is there no customer</h4>
+}
+
+

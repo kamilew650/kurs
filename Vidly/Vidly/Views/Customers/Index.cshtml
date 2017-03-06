@@ -17,7 +17,7 @@
         {
             string s = Cust.Name; 
             <tr>
-                <td> @Html.ActionLink(s, "Details", "Customers")  </td>
+                <td> @Html.ActionLink(s,"Details", "Customers",new { Id=Cust.Id }, null)  </td>
             </tr>
         }
     </table>

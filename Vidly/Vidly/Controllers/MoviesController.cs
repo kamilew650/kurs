@@ -36,5 +36,28 @@ namespace Vidly.Controllers
         {
             return Content(year + "/" + month);
         }
+
+        public ActionResult Index()
+        {
+            var movies = new List<Movie>
+            {
+                new Movie {Name="Shrek", Id=1 },
+                new Movie {Name="Piraci z Karajibuf", Id=2 }
+            };
+
+            var m = new IndexMovieViewModel
+            {
+                Ile = movies.Count(),
+                Movies = movies
+            };
+
+            return View(m);
+        }
+
+        public ActionResult Details(int Id)
+        {
+
+            return Content(Convert.ToString(Id));
+        }
     }
 }

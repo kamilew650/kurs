@@ -31,7 +31,7 @@ namespace Vidly.Controllers
         public ActionResult Details(int Id)
         {
 
-            return View();
+            return Content(Convert.ToString(Id));
         }
     }
 }

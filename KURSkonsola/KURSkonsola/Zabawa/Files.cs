@@ -9,31 +9,30 @@ namespace KURSkonsola.Zabawa
 {
     class Files
     {
-        public static void Main()
+        
+        public void CreateDirectory(string path)
         {
-            string path = @"text.txt";
-
-            // Open the stream and write to it.
-            using (FileStream fs = File.OpenWrite(path))
+            if(!Directory.Exists(@path))
             {
-                Byte[] info =
-                    new UTF8Encoding(true).GetBytes("This is to test the OpenWrite method.");
-
-                // Add some information to the file.
-                fs.Write(info, 0, info.Length);
-            }
-
-            // Open the stream and read it back.
-            using (FileStream fs = File.OpenRead(path))
-            {
-                byte[] b = new byte[1024];
-                UTF8Encoding temp = new UTF8Encoding(true);
-
-                while (fs.Read(b, 0, b.Length) > 0)
-                {
-                    Console.WriteLine(temp.GetString(b));
-                }
+                Directory.CreateDirectory(@path);
             }
         }
+       
+        public void WriteFile(string path, string date)
+        {
+            if(!File.Exists(@path))
+            {
+                StreamWriter sw = File.CreateText(@path);
+                sw.WriteLine(date);
+                sw.Close();
+
+            }else
+            {
+                StreamWriter sw = new StreamWriter(@path);
+                sw.WriteLine(date);
+                sw.Close();
+            }
+        }
+
     }
 }

@@ -6,24 +6,18 @@
 
 <h2>Movies</h2>
 
-@if(@Model.Ile>0)
-{
-    <table>
-        <tr>
-            <th>Movies</th>
-        </tr>
-        
-        @foreach (var Mov in Model.Movies)
-        {
-            string s = Mov.Name;
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Movies</th>
+    </tr>
+      
+    @foreach (var Mov in Model)
+    {
+        string s = Mov.Name;
         <tr>
             <td> @Html.ActionLink(s, "Details", "Movies", new { Id = Mov.Id }, null)</td>
         </tr>
-        }
+    }
         
-    </table>
-}
-else
-{
-    <h3>Nope, any one movie.</h3>
-}
+</table>

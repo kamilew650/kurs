@@ -224,6 +224,34 @@
     <Compile Include="Migrations\201703132311292_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201703132311292_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703201838574_MembershipTypeUpdate.cs" />
+    <Compile Include="Migrations\201703201838574_MembershipTypeUpdate.Designer.cs">
+      <DependentUpon>201703201838574_MembershipTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703201843523_ApplyAnnotationToMembershipTypeName.cs" />
+    <Compile Include="Migrations\201703201843523_ApplyAnnotationToMembershipTypeName.Designer.cs">
+      <DependentUpon>201703201843523_ApplyAnnotationToMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703201848461_ApplyMembershipName.cs" />
+    <Compile Include="Migrations\201703201848461_ApplyMembershipName.Designer.cs">
+      <DependentUpon>201703201848461_ApplyMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703201854574_TryAgain.cs" />
+    <Compile Include="Migrations\201703201854574_TryAgain.Designer.cs">
+      <DependentUpon>201703201854574_TryAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703222016180_UpdateAgain.cs" />
+    <Compile Include="Migrations\201703222016180_UpdateAgain.Designer.cs">
+      <DependentUpon>201703222016180_UpdateAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703231130522_AddCustomerDate.cs" />
+    <Compile Include="Migrations\201703231130522_AddCustomerDate.Designer.cs">
+      <DependentUpon>201703231130522_AddCustomerDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703231205469_AddNewModelMovie.cs" />
+    <Compile Include="Migrations\201703231205469_AddNewModelMovie.Designer.cs">
+      <DependentUpon>201703231205469_AddNewModelMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -302,6 +330,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -331,6 +360,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703132311292_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201703132311292_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201838574_MembershipTypeUpdate.resx">
+      <DependentUpon>201703201838574_MembershipTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201843523_ApplyAnnotationToMembershipTypeName.resx">
+      <DependentUpon>201703201843523_ApplyAnnotationToMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201848461_ApplyMembershipName.resx">
+      <DependentUpon>201703201848461_ApplyMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201854574_TryAgain.resx">
+      <DependentUpon>201703201854574_TryAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703222016180_UpdateAgain.resx">
+      <DependentUpon>201703222016180_UpdateAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703231130522_AddCustomerDate.resx">
+      <DependentUpon>201703231130522_AddCustomerDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703231205469_AddNewModelMovie.resx">
+      <DependentUpon>201703231205469_AddNewModelMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

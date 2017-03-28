@@ -23,24 +23,15 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        // GET: Movies/Random
-        public ActionResult Random()
+        public ActionResult New()
         {
-            var movie = new Movie() { Name = "Shrek!" };
-            var customers = new List<Customer>
+            var genres = _context.Genres.ToList();
+            var viewModel = new MovieFormViewModel
             {
-                new Customer { Name = "Customer 1" },
-                new Customer { Name = "Customer 2" }
-
+                Genres = genres
             };
 
-            var viewModel = new RandomMovieViewModel
-            {
-                Movie = movie,
-                Customers = customers
-            };
-
-            return View(viewModel);
+            return View("MovieForm", viewModel);
         }
 
 

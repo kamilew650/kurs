@@ -34,6 +34,15 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            movie.Genre_Id = movie.GenreId;
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Movies");
+        }
 
         //[Route("movies/released/{year}/{month:regex(\\d{4}):range(1, 12)}")]
         public ActionResult ByReleaseDate( int year, int month)

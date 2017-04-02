@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace Vidly.Models
 {
@@ -17,9 +18,9 @@ namespace Vidly.Models
         [Display(Name = "Date Added")]
         public string DataAdded { get; set; }
 
+        [Display(Name = "Genre")]
+        public byte GenreId { get; set; }
         public Genre Genre { get; set; }
 
-        [Display(Name = "Genre")]
-        public int GenreId { get; set; }
-    }
+        }
 }

@@ -17,7 +17,7 @@
     {
         string s = Mov.Name;
         <tr>
-            <td> @Html.ActionLink(s, "Details", "Movies", new { Id = Mov.Id }, null)</td>
+            <td> @Html.ActionLink(s, "Edit", "Movies", new { Id = Mov.Id }, null)</td>
             <td> @Mov.Genre.Discribe</td>
         </tr>
     }

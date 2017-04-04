@@ -18,7 +18,7 @@ namespace Vidly
             routes.MapRoute(
                 "View",
                 "{controller}/{action}/{Od}/{Do}",
-                new { controller = "Random", action = "View" }
+                new { controller = "Random", action = "View", Od = 1, Do = 5 }
             );
 
             routes.MapRoute(

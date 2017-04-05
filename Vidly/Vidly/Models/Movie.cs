@@ -29,7 +29,7 @@ namespace Vidly.Models
         public Genre Genre { get; set; }
 
         [Display(Name = "Number in Stock")]
-        [Required]
+        [Min1Max20NumberInStock]
         public byte NumberInStock { get; set; }
 
         }

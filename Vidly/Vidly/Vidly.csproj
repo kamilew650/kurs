@@ -221,6 +221,14 @@
     <Compile Include="Migrations\201704022006036_AddGenres.Designer.cs">
       <DependentUpon>201704022006036_AddGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704050853453_AddSomethingToMovie.cs" />
+    <Compile Include="Migrations\201704050853453_AddSomethingToMovie.Designer.cs">
+      <DependentUpon>201704050853453_AddSomethingToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704050927254_HaventIdeaWhatImDoingNow.cs" />
+    <Compile Include="Migrations\201704050927254_HaventIdeaWhatImDoingNow.Designer.cs">
+      <DependentUpon>201704050927254_HaventIdeaWhatImDoingNow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -336,6 +344,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704022006036_AddGenres.resx">
       <DependentUpon>201704022006036_AddGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704050853453_AddSomethingToMovie.resx">
+      <DependentUpon>201704050853453_AddSomethingToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704050927254_HaventIdeaWhatImDoingNow.resx">
+      <DependentUpon>201704050927254_HaventIdeaWhatImDoingNow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

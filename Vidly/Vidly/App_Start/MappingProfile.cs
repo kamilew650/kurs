@@ -12,9 +12,9 @@ namespace Vidly.App_Start
     {
         public MappingProfile()
         {
-            Mapper.Map<Customer, CustomerDto>();
-            Mapper.Map<CustomerDto, Customer>();
-            Mapper.Map
+            Mapper.Initialize(cfg => cfg.CreateMap<Customer, CustomerDto>());
+            Mapper.Initialize(cfg => cfg.CreateMap<CustomerDto, Customer >());
+
         }
     }
 }

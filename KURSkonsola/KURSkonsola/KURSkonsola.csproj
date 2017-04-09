@@ -50,6 +50,8 @@
     <Compile Include="Kurs\Program2.cs" />
     <Compile Include="Kurs\Program3_Metody.cs" />
     <Compile Include="Kurs\Program4_Fields.cs" />
+    <Compile Include="Kurs\Program5_Properties.cs" />
+    <Compile Include="Kurs\Program6_Indexer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zabawa\Files.cs" />
     <Compile Include="Zabawa\MainP.cs" />

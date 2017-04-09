@@ -65,19 +65,19 @@ namespace KURSkonsola
 
         //}
 
-        static void UsePoints()
-        {
-            try
-            {
-                var point = new Point(10, 20);
-                point.Move(null);
-                Console.WriteLine("Point is at: {0}. {1}. ", point.X, point.Y);
-            }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine("An unexpected error occured");
-            }
-        }
+        //static void UsePoints()
+        //{
+        //    try
+        //    {
+        //        var point = new Point(10, 20);
+        //        point.Move(null);
+        //        Console.WriteLine("Point is at: {0}. {1}. ", point.X, point.Y);
+        //    }
+        //    catch (ArgumentNullException e)
+        //    {
+        //        Console.WriteLine("An unexpected error occured");
+        //    }
+        //}
 
         static void UsePrams()
         {

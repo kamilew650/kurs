@@ -12,8 +12,8 @@ namespace Vidly.App_Start
     {
         public MappingProfile()
         {
-            Mapper.Initialize(cfg => cfg.CreateMap<Customer, CustomerDto>());
-            Mapper.Initialize(cfg => cfg.CreateMap<CustomerDto, Customer >());
+            Mapper.CreateMap<Customer, CustomerDto>();
+            Mapper.CreateMap<CustomerDto, Customer >();
 
         }
     }

@@ -11,16 +11,15 @@ namespace Vidly.Dtos
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Please enter customer's name.")]
+        [Required]
         [StringLength(255)]
         public string Name { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }
 
-        [Required]
         public byte MembershipTypeId { get; set; }
 
-        [Min18YearsIfAMember]
+ //       [Min18YearsIfAMember]
         public string Birthday { get; set; }
     }
 }

@@ -56,6 +56,7 @@
     <Compile Include="Zabawa\Files.cs" />
     <Compile Include="Zabawa\MainP.cs" />
     <Compile Include="Zabawa\XMLFiles.cs" />
+    <Compile Include="Zadania\Stopwatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

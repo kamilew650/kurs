@@ -26,11 +26,11 @@ namespace KURSkonsola.Kurs
 
     class Program6_Indexer
     {
-        static void Main(string[] args)
-        {
-            var cookie = new HttpCookie();
-            cookie["name"] = "Kamil";
-            Console.WriteLine(cookie["name"]);
-        }
+        //static void Main(string[] args)
+        //{
+        //    var cookie = new HttpCookie();
+        //    cookie["name"] = "Kamil";
+        //    Console.WriteLine(cookie["name"]);
+        //}
     }
 }

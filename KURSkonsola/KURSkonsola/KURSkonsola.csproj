@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharp Udemy\Post.cs" />
+    <Compile Include="CSharp Udemy\Program.cs" />
+    <Compile Include="CSharp Udemy\Stopwatch.cs" />
     <Compile Include="Kurs\Kolekcje.cs" />
     <Compile Include="Kurs\IPerson.cs" />
     <Compile Include="Kurs\KursACs.cs" />
@@ -56,11 +59,11 @@
     <Compile Include="Zabawa\Files.cs" />
     <Compile Include="Zabawa\MainP.cs" />
     <Compile Include="Zabawa\XMLFiles.cs" />
-    <Compile Include="Zadania\Stopwatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

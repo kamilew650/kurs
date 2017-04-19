@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KURSkonsola.Zadania
+namespace KURSkonsola.CSharp_Udemy
 {
-    class Stopwatch
+    class Program
     {
+        public static void Main(string[] args)
+        {
 
+        }
     }
 }

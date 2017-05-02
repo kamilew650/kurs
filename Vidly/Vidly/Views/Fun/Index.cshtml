@@ -6,18 +6,41 @@
 
 
 
+<script type="text/javascript">
+
+    function wypisz()
+    {
+        var liczba1 = document.getElementById("licz1").value;
+        var liczba2 = document.getElementById("licz2").value;
+
+        var napis = "";
+
+        for(var i = liczba1; i <= liczba2; i++)
+        {
+            napis = napis + " " + i;
+        }
+
+        document.getElementById("wypisanie").innerHTML = napis;
+
+    }
+
+</script>
+
 
 <h2>Index</h2>
 
 <p id="demo">Dawaj</p>
 
+<input type="text" id="licz1" />
+<input type="text" id="licz2" />
+
 <button type="button"
-    onclick="document.getElementById('demo').style.display = 'none';">Click me!
+    onclick="wypisz()">Click me!
 </button>    
 
-<div ng-app="" ng-init="firstName='John'">
+<div id="wypisanie">
 
-    <p>The name is <span ng-bind="firstName"></span></p>
+   
 
 </div>
 

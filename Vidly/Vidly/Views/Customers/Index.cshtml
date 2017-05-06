@@ -9,23 +9,26 @@
    @Html.ActionLink("NEW CUSTOMER", "New", "Customers", "", new { @class = "btn btn-primary" })
 
   <table id="customers" class="table table-bordered table-hover">
-      <tr>
-          <th>Customer</th>
-          <th>Discount Rate</th>
-          <th>Delete</th>
-      </tr>
-        
-      @foreach (var customer in Model)
-      {
-          string s = customer.Name;
+      <thead>
           <tr>
-              <td> @Html.ActionLink(s, "Edit", "Customers", new { Id=customer.Id }, null)  </td>
-              <td> @customer.MembershipType.Name </td>
-              <td>
-                  <button data-customer-id="@customer.Id" class="btn-link js-delete">Delete</button>
-              </td>
+              <th>Customer</th>
+              <th>Discount Rate</th>
+              <th>Delete</th>
           </tr>
-      }
+      </thead>
+      <tbody>  
+          @foreach (var customer in Model)
+          {
+              string s = customer.Name;
+              <tr>
+                  <td> @Html.ActionLink(s, "Edit", "Customers", new { Id=customer.Id }, null)  </td>
+                  <td> @customer.MembershipType.Name </td>
+                  <td>
+                      <button data-customer-id="@customer.Id" class="btn-link js-delete">Delete</button>
+                  </td>
+              </tr>
+          }
+      </tbody>  
   </table>
 
 
@@ -33,17 +36,24 @@
 {
     <script>
         $(document).ready(function () {
-            $("#customers .js-delete").on("click", function () {
+            $("#customers").DataTable();
+
+
+            $("#customers").on("click", ".js-delete", function () {
                 var button = $(this);
-                if (confirm("Are you sure?")) {
-                    $.ajax({
-                        url: "/api/customers/" + button.attr("data-customer-id"),
-                        method: "DELETE",
-                        success: function () {
-                            button.parents("tr").remove();
-                        }
-                    });
-                }
+
+                bootbox.confirm("Are you sure?", function(result){
+                    if(result)
+                    {
+                        $.ajax({
+                            url: "/api/customers/" + button.attr("data-customer-id"),
+                            method: "DELETE",
+                            success: function () {
+                                button.parents("tr").remove();
+                            }
+                        });
+                    }
+                });
             });
         });
     </script>    

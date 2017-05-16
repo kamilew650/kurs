@@ -55,6 +55,8 @@
     <Compile Include="Kurs\Program4_Fields.cs" />
     <Compile Include="Kurs\Program5_Properties.cs" />
     <Compile Include="Kurs\Program6_Indexer.cs" />
+    <Compile Include="Kurs\Program7_inharitance.cs" />
+    <Compile Include="Kurs\Program8_composition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zabawa\Files.cs" />
     <Compile Include="Zabawa\MainP.cs" />
